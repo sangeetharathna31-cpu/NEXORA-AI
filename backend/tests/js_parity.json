@@ -1,0 +1,114 @@
+[
+ [
+  "What is a list?",
+  "Lists"
+ ],
+ [
+  "How do I handle errors?",
+  "Exception handling"
+ ],
+ [
+  "Explain decorators",
+  "Decorators"
+ ],
+ [
+  "Difference between list and tuple",
+  "Difference between list and tuple"
+ ],
+ [
+  "what is the gil",
+  "The GIL"
+ ],
+ [
+  "how to copy deep",
+  "Shallow vs deep copy"
+ ],
+ [
+  "virtual env",
+  "Virtual environments"
+ ],
+ [
+  "tell me about python",
+  "What is Python?"
+ ],
+ [
+  "python",
+  "What is Python?"
+ ],
+ [
+  "qwerty asdf",
+  null
+ ],
+ [
+  "lambda",
+  "Lambda functions"
+ ],
+ [
+  "difference between == and is",
+  "Difference between == and is"
+ ],
+ [
+  "generators yield",
+  "Generators"
+ ],
+ [
+  "mutable vs immutable",
+  "Mutable vs immutable types"
+ ],
+ [
+  "file handling in python",
+  "File handling"
+ ],
+ [
+  "*args and **kwargs",
+  "*args and **kwargs"
+ ],
+ [
+  "how do i make a class",
+  "Classes and objects (OOP)"
+ ],
+ [
+  "inheritance super",
+  "Inheritance"
+ ],
+ [
+  "sets union",
+  "Sets"
+ ],
+ [
+  "memory management",
+  "Python's memory management / garbage collection"
+ ],
+ [
+  "dictionary keys values",
+  "Dictionaries"
+ ],
+ [
+  "loops",
+  "Loops"
+ ],
+ [
+  "if else",
+  "Conditionals"
+ ],
+ [
+  "import modules pip",
+  "Modules and imports"
+ ],
+ [
+  "strings f-string",
+  "Strings"
+ ],
+ [
+  "explain tuples",
+  "Tuples"
+ ],
+ [
+  "",
+  null
+ ],
+ [
+  "???",
+  null
+ ]
+]

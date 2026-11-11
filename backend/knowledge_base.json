@@ -1,0 +1,188 @@
+[
+ {
+  "topic": "What is Python?",
+  "keywords": "introduction overview language interpreted high-level created guido",
+  "answer": "Python is a high-level, interpreted, dynamically typed, general-purpose programming language known for its readable syntax. It supports procedural, object-oriented and functional styles."
+ },
+ {
+  "topic": "Variables and data types",
+  "keywords": "variable variables data types int float str bool type datatype",
+  "answer": "Variables are created by assignment (x = 5); no declaration is needed.\nCommon built-in types: int, float, str, bool, list, tuple, set, dict, NoneType.\nUse type(x) to check a type."
+ },
+ {
+  "topic": "Lists",
+  "keywords": "list lists append remove pop insert sort slicing mutable array",
+  "answer": "A list is an ordered, mutable collection: nums = [1, 2, 3].\nMethods: append(x), insert(i, x), remove(x), pop(), sort(), reverse().\nSlicing: nums[1:3]. Lists can hold mixed types."
+ },
+ {
+  "topic": "Tuples",
+  "keywords": "tuple tuples immutable unpacking",
+  "answer": "A tuple is an ordered, immutable collection: t = (1, 2, 3).\nOnce created it cannot be changed. Useful for fixed data and as dict keys. Unpacking: a, b, c = t."
+ },
+ {
+  "topic": "Dictionaries",
+  "keywords": "dictionary dictionaries dict key value pairs hash map get items keys values",
+  "answer": "A dictionary stores key-value pairs: d = {'name': 'Asha', 'age': 20}.\nAccess: d['name'] or d.get('name'). Methods: keys(), values(), items(), update(), pop(). Keys must be hashable (immutable)."
+ },
+ {
+  "topic": "Sets",
+  "keywords": "set sets unique union intersection difference duplicates",
+  "answer": "A set is an unordered collection of unique elements: s = {1, 2, 3}.\nSupports union (|), intersection (&), difference (-). set(list_) removes duplicates."
+ },
+ {
+  "topic": "Difference between list and tuple",
+  "keywords": "difference between list tuple mutable immutable compare vs",
+  "answer": "Lists are mutable (can be changed) and use []; tuples are immutable and use (). Tuples are slightly faster and can be used as dictionary keys; lists cannot."
+ },
+ {
+  "topic": "Functions",
+  "keywords": "function functions def define return parameters arguments call",
+  "answer": "Define a function with def:\n\n    def add(a, b=0):\n        return a + b\n\nSupports default arguments, keyword arguments, *args and **kwargs."
+ },
+ {
+  "topic": "Lambda functions",
+  "keywords": "lambda anonymous function inline",
+  "answer": "A lambda is a small anonymous function: square = lambda x: x * x.\nOften used with map(), filter() and sorted(key=...)."
+ },
+ {
+  "topic": "*args and **kwargs",
+  "keywords": "args kwargs variable arguments positional keyword star",
+  "answer": "*args collects extra positional arguments into a tuple; **kwargs collects extra keyword arguments into a dict:\n\n    def f(*args, **kwargs): print(args, kwargs)"
+ },
+ {
+  "topic": "Loops",
+  "keywords": "loop loops for while iterate iteration range break continue",
+  "answer": "for loop: for i in range(5): print(i)\nwhile loop: while cond: ...\nbreak exits the loop; continue skips to the next iteration."
+ },
+ {
+  "topic": "Conditionals",
+  "keywords": "if else elif condition conditional statement decision",
+  "answer": "Use if / elif / else:\n\n    if x > 0: print('positive')\n    elif x == 0: print('zero')\n    else: print('negative')"
+ },
+ {
+  "topic": "List comprehension",
+  "keywords": "list comprehension comprehensions shortcut generate",
+  "answer": "A concise way to build lists:\n\n    squares = [x*x for x in range(10) if x % 2 == 0]\n\nDict and set comprehensions work the same way with {}."
+ },
+ {
+  "topic": "Strings",
+  "keywords": "string strings str upper lower split join replace format fstring f-string strip",
+  "answer": "Strings are immutable sequences of characters.\nMethods: upper(), lower(), strip(), split(), join(), replace(), find().\nf-strings: f'Hello {name}'."
+ },
+ {
+  "topic": "Classes and objects (OOP)",
+  "keywords": "class classes object objects oop init self constructor method attribute",
+  "answer": "A class is a blueprint for objects:\n\n    class Dog:\n        def __init__(self, name):\n            self.name = name\n        def bark(self):\n            return self.name + ' says woof'\n\nd = Dog('Rex') creates an object. __init__ is the constructor."
+ },
+ {
+  "topic": "Inheritance",
+  "keywords": "inheritance inherit parent child subclass super base derived",
+  "answer": "A class can inherit from another: class Puppy(Dog): ...\nUse super().__init__(...) to call the parent constructor. Python supports multiple inheritance."
+ },
+ {
+  "topic": "Exception handling",
+  "keywords": "exception exceptions error errors try except finally raise handling",
+  "answer": "Handle errors with try/except:\n\n    try:\n        x = 1 / 0\n    except ZeroDivisionError:\n        print('Cannot divide by zero')\n    finally:\n        print('always runs')\n\nUse raise to throw your own exception."
+ },
+ {
+  "topic": "File handling",
+  "keywords": "file files open read write append close with handling text",
+  "answer": "Use a with block so the file closes automatically:\n\n    with open('data.txt', 'r') as f:\n        content = f.read()\n\nModes: 'r' read, 'w' write, 'a' append, 'b' binary."
+ },
+ {
+  "topic": "Modules and imports",
+  "keywords": "module modules import package packages library libraries pip install",
+  "answer": "A module is a .py file you can reuse: import math; math.sqrt(16).\nAlso: from math import pi. Install third-party packages with pip install <name>."
+ },
+ {
+  "topic": "Decorators",
+  "keywords": "decorator decorators wrapper @",
+  "answer": "A decorator wraps a function to add behaviour:\n\n    def log(func):\n        def wrapper(*a, **k):\n            print('calling', func.__name__)\n            return func(*a, **k)\n        return wrapper\n\n    @log\n    def hello(): print('hi')"
+ },
+ {
+  "topic": "Generators",
+  "keywords": "generator generators yield iterator lazy",
+  "answer": "A generator produces values lazily using yield:\n\n    def count(n):\n        for i in range(n):\n            yield i\n\nThey save memory because values are created one at a time."
+ },
+ {
+  "topic": "Difference between == and is",
+  "keywords": "difference == is equality identity operator compare",
+  "answer": "== checks whether two values are equal; 'is' checks whether two names refer to the same object in memory. Use 'is' mainly for None: if x is None."
+ },
+ {
+  "topic": "Shallow vs deep copy",
+  "keywords": "copy deepcopy shallow deep clone",
+  "answer": "A shallow copy (list.copy() or copy.copy) copies the outer object but shares nested objects. copy.deepcopy() copies everything recursively."
+ },
+ {
+  "topic": "Python's memory management / garbage collection",
+  "keywords": "memory management garbage collection gc reference counting heap",
+  "answer": "Python uses reference counting plus a cyclic garbage collector to free unused objects automatically. Memory lives in a private heap managed by the interpreter."
+ },
+ {
+  "topic": "The GIL",
+  "keywords": "gil global interpreter lock threading multithreading concurrency",
+  "answer": "The Global Interpreter Lock (GIL) lets only one thread execute Python bytecode at a time in CPython. Use multiprocessing for CPU-bound parallelism; threads still help with I/O-bound work."
+ },
+ {
+  "topic": "Virtual environments",
+  "keywords": "virtual environment venv virtualenv isolate dependencies",
+  "answer": "A virtual environment isolates project dependencies:\n\n    python -m venv venv\n    source venv/bin/activate   (Windows: venv\\Scripts\\activate)\n    pip install requests"
+ },
+ {
+  "topic": "Mutable vs immutable types",
+  "keywords": "mutable immutable types change modify",
+  "answer": "Mutable objects can be changed after creation (list, dict, set). Immutable objects cannot (int, float, str, tuple, frozenset, bool)."
+ },
+
+{
+  "topic": "Matplotlib",
+  "keywords": "matplotlib plotting visualization graph chart pyplot",
+  "answer": "Matplotlib is a Python library used for data visualization. Import it using import matplotlib.pyplot as plt. It supports line plots, bar charts, histograms and scatter plots."
+},
+{
+  "topic": "Line Plot",
+  "keywords": "line plot plotting graph trend continuous data",
+  "answer": "A line plot displays data points connected by lines. It is useful for showing trends.\nSyntax:\nimport matplotlib.pyplot as plt\nx = [1, 2, 3]\ny = [10, 20, 30]\nplt.plot(x, y)\nplt.show()"
+},
+{
+  "topic": "Bar Chart",
+  "keywords": "bar chart barplot categorical comparison",
+  "answer": "A bar chart compares values across categories.\nSyntax:\nimport matplotlib.pyplot as plt\nnames = ['A', 'B', 'C']\nmarks = [80, 90, 70]\nplt.bar(names, marks)\nplt.show()"
+},
+{
+  "topic": "Histogram",
+  "keywords": "histogram distribution frequency bins numerical data",
+  "answer": "A histogram shows the frequency distribution of numerical data.\nSyntax:\nimport matplotlib.pyplot as plt\nmarks = [50, 60, 70, 80, 90]\nplt.hist(marks, bins=5)\nplt.show()"
+},
+{
+  "topic": "Scatter Plot",
+  "keywords": "scatter plot relationship correlation variables points",
+  "answer": "A scatter plot displays points to show the relationship between two numerical variables.\nSyntax:\nimport matplotlib.pyplot as plt\nx = [1, 2, 3]\ny = [10, 20, 15]\nplt.scatter(x, y)\nplt.show()"
+},
+{
+  "topic": "Pie Chart",
+  "keywords": "pie chart percentage proportion slices",
+  "answer": "A pie chart represents proportions of a whole.\nSyntax:\nimport matplotlib.pyplot as plt\nvalues = [40, 30, 20, 10]\nplt.pie(values, autopct='%1.1f%%')\nplt.show()"
+},
+{
+  "topic": "Box Plot",
+  "keywords": "box plot boxplot quartile median outlier distribution",
+  "answer": "A box plot summarizes data using quartiles and median. It helps identify potential outliers.\nSyntax:\nimport matplotlib.pyplot as plt\ndata = [10, 20, 25, 30, 100]\nplt.boxplot(data)\nplt.show()"
+},
+{
+  "topic": "Seaborn",
+  "keywords": "seaborn statistical visualization library plotting",
+  "answer": "Seaborn is a Python statistical visualization library built on Matplotlib.\nSyntax:\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nsns.histplot(data=[10, 20, 20, 30, 40])\nplt.show()"
+},
+{
+  "topic": "Heatmap",
+  "keywords": "heatmap correlation matrix seaborn colors visualization",
+  "answer": "A heatmap uses colours to represent numerical values. It is commonly used for correlation matrices.\nSyntax:\nimport seaborn as sns\nimport matplotlib.pyplot as plt\nimport pandas as pd\ndata = pd.DataFrame({'A': [1, 2, 3], 'B': [2, 4, 6]})\nsns.heatmap(data.corr(), annot=True)\nplt.show()"
+},
+{
+  "topic": "Pair Plot",
+  "keywords": "pairplot pair plot multivariate relationships seaborn",
+  "answer": "A pair plot displays pairwise relationships between numerical variables in a dataset.\nSyntax:\nimport seaborn as sns\nimport matplotlib.pyplot as plt\niris = sns.load_dataset('iris')\nsns.pairplot(iris, hue='species')\nplt.show()"
+}
+]

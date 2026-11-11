@@ -1,0 +1,11 @@
+{
+  "title": "NEXORA AI — Intelligent Workspace",
+  "description": "Chat with an AI assistant, explore ideas, write and debug code, and analyze information in a polished workspace with conversation history and customizable themes.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
